@@ -6,19 +6,18 @@ target 'Algorhythm' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'MessageKit', '~> 0.13'
-      pod 'IBMWatsonAssistantV1', '~> 3.5.0'
-      pod 'NVActivityIndicatorView', '~> 4.8.0'
-
-      post_install do |installer|
-          installer.pods_project.targets.each do |target|
-              if ['SwiftCloudant'].include? target.name
-                  target.build_configurations.each do |config|
-                      config.build_settings['SWIFT_VERSION'] = '3.2'
-                  end
-              end
-          end
-      end
+      pod 'IBMWatsonAssistantV1', '~> 4.1.0'
+      pod 'IBMWatsonAssistantV2', '~> 4.1.0'
+      pod 'IBMWatsonCompareComplyV1', '~> 4.1.0'
+      pod 'IBMWatsonDiscoveryV1', '~> 4.1.0'
+      pod 'IBMWatsonLanguageTranslatorV3', '~> 4.1.0'
+      pod 'IBMWatsonNaturalLanguageClassifierV1', '~> 4.1.0'
+      pod 'IBMWatsonNaturalLanguageUnderstandingV1', '~> 4.1.0'
+      pod 'IBMWatsonPersonalityInsightsV3', '~> 4.1.0'
+      pod 'IBMWatsonSpeechToTextV1', '~> 4.1.0'
+      pod 'IBMWatsonTextToSpeechV1', '~> 4.1.0'
+      pod 'IBMWatsonToneAnalyzerV3', '~> 4.1.0'
+      pod 'IBMWatsonVisualRecognitionV3', '~> 4.1.0'
   
   # Pods for Algorhythm
 

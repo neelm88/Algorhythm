@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import Assistant
+
+
 
 @main
 struct AlgorhythmApp: App {
