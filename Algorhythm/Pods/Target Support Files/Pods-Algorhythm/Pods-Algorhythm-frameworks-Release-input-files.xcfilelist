@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-Algorhythm/Pods-Algorhythm-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BMSAnalyticsAPI/BMSAnalyticsAPI.framework
+${BUILT_PRODUCTS_DIR}/BMSCore/BMSCore.framework
+${BUILT_PRODUCTS_DIR}/IBMSwiftSDKCore/IBMSwiftSDKCore.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonAssistantV1/Assistant.framework
+${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework
