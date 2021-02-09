@@ -10,11 +10,13 @@ import Assistant
 
 
 
+
+
 @main
 struct AlgorhythmApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        WindowGroup{
+            SongSelectionView()
         }
     }
 }
