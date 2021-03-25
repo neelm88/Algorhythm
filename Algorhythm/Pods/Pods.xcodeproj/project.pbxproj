@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -994,13 +994,13 @@
 		06C3475CFB8DB389ACC5BA62249D5863 /* ClassifierList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifierList.swift; path = Sources/NaturalLanguageClassifierV1/Models/ClassifierList.swift; sourceTree = "<group>"; };
 		073C7A2DF8682AD60A0076414D312D23 /* SentimentResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SentimentResult.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/SentimentResult.swift; sourceTree = "<group>"; };
 		07AC87E148029CD0ACD1B81556C0C98D /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
-		07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpeechToText.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F10DE944B6A35DEF451FE6D50C5994 /* SpeechToText.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SpeechToText.framework; path = IBMWatsonSpeechToTextV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0829DF1355E8FE1EE9CDEA0E6AE2462A /* SduStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SduStatus.swift; path = Sources/DiscoveryV1/Models/SduStatus.swift; sourceTree = "<group>"; };
 		0835C747DF3A871C0C60E4466B37C4ED /* UtteranceAnalyses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UtteranceAnalyses.swift; path = Sources/ToneAnalyzerV3/Models/UtteranceAnalyses.swift; sourceTree = "<group>"; };
 		08C75C000046EBE33AA7741CBA9CF8BB /* WordConfidence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WordConfidence.swift; path = Sources/SpeechToTextV1/Models/WordConfidence.swift; sourceTree = "<group>"; };
-		08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisualRecognition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08EAA074C1343796DF7D1D15BD43A94A /* VisualRecognition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VisualRecognition.framework; path = IBMWatsonVisualRecognitionV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F7F004DE9773E9AD2C59157FB61AAB /* Discovery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Discovery.swift; path = Sources/DiscoveryV1/Discovery.swift; sourceTree = "<group>"; };
-		09395C8492332B91FA9EEB6E1A660E57 /* Pods_AlgorhythmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgorhythmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09395C8492332B91FA9EEB6E1A660E57 /* Pods_AlgorhythmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AlgorhythmTests.framework; path = "Pods-AlgorhythmTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09BB2CFA48A97286CC2A20693F7AE7E8 /* RuntimeResponseGenericRuntimeResponseTypeConnectToAgent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeResponseGenericRuntimeResponseTypeConnectToAgent.swift; path = Sources/AssistantV1/Models/RuntimeResponseGenericRuntimeResponseTypeConnectToAgent.swift; sourceTree = "<group>"; };
 		0B45D7ABE12B3CD73BD99BD3D7156898 /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Sources/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
 		0BEFAC66AD500C7095AFE53854BB3320 /* TranslationModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranslationModel.swift; path = Sources/LanguageTranslatorV3/Models/TranslationModel.swift; sourceTree = "<group>"; };
@@ -1082,7 +1082,7 @@
 		277CEF16EB9A61B8999013F19B820E81 /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
 		282ED410DA149514F4D0BAD7C90DA1CF /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSAnalyticsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2838BEA39C100AE4F6E37A6C3DF387F9 /* ClassifiedImages.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassifiedImages.swift; path = Sources/VisualRecognitionV3/Models/ClassifiedImages.swift; sourceTree = "<group>"; };
-		28B412AAAC6AEA37FA98B268BFA46164 /* Pods_Algorhythm_AlgorhythmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algorhythm_AlgorhythmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B412AAAC6AEA37FA98B268BFA46164 /* Pods_Algorhythm_AlgorhythmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Algorhythm_AlgorhythmUITests.framework; path = "Pods-Algorhythm-AlgorhythmUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AA5CDA21658A7E6D3F6DA4254BA794C /* AnalysisResultsUsage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalysisResultsUsage.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/AnalysisResultsUsage.swift; sourceTree = "<group>"; };
 		2AB451A330611B327694EAE4973128BA /* TokenDictStatusResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenDictStatusResponse.swift; path = Sources/DiscoveryV1/Models/TokenDictStatusResponse.swift; sourceTree = "<group>"; };
 		2B038EDE6D5FA2C901C1997A6FBA1E5B /* Class.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Class.swift; path = Sources/VisualRecognitionV3/Models/Class.swift; sourceTree = "<group>"; };
@@ -1116,10 +1116,10 @@
 		3566F09A4BC8F11E055F1CD8057AB621 /* SourceOptionsSiteColl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceOptionsSiteColl.swift; path = Sources/DiscoveryV1/Models/SourceOptionsSiteColl.swift; sourceTree = "<group>"; };
 		366BA3FB0955AE2AD467386548B6A09F /* DialogNodeOutputOptionsElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputOptionsElement.swift; path = Sources/AssistantV2/Models/DialogNodeOutputOptionsElement.swift; sourceTree = "<group>"; };
 		369A67281E7B4B9585153E58ED23F17D /* MessageResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageResponse.swift; path = Sources/AssistantV2/Models/MessageResponse.swift; sourceTree = "<group>"; };
-		36B0DEE3EE7E10AC2578D20C2922789B /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSAnalyticsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36B0DEE3EE7E10AC2578D20C2922789B /* BMSAnalyticsAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BMSAnalyticsAPI.framework; path = BMSAnalyticsAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36BAB097954BF9AA2CF046270AAF9FC1 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Sources/AssistantV2/Models/Log.swift; sourceTree = "<group>"; };
 		36D13B25442201BEB3A461EBEE4207DF /* IBMWatsonDiscoveryV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonDiscoveryV1.release.xcconfig; sourceTree = "<group>"; };
-		36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TextToSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36FC23FCB21A94C8D3C0E44D1DD6B442 /* TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextToSpeech.framework; path = IBMWatsonTextToSpeechV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3731478BA783E9429F928BB18E2E5441 /* IBMWatsonAssistantV2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonAssistantV2.modulemap; sourceTree = "<group>"; };
 		377E461DB08A80890080A1E11E79B0EF /* SyntaxOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxOptions.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/SyntaxOptions.swift; sourceTree = "<group>"; };
 		37B290E16ADBE066BA2897C650ABB36B /* DialogNodeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeAction.swift; path = Sources/AssistantV2/Models/DialogNodeAction.swift; sourceTree = "<group>"; };
@@ -1238,7 +1238,7 @@
 		61AA581383BFA7E4B3D88FE42471EDB4 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
 		625303922DF3B81C5DF5009D8E914F51 /* Classifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Classifier.swift; path = Sources/VisualRecognitionV3/Models/Classifier.swift; sourceTree = "<group>"; };
 		62C45522FAB15BDA6DB397753B4A9C4B /* RequestMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
-		6304993B27A8244EDE2CF492F8C40D6A /* Pods_Algorhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algorhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6304993B27A8244EDE2CF492F8C40D6A /* Pods_Algorhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Algorhythm.framework; path = "Pods-Algorhythm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		631C43AABC2CE9D191B13BECE09BCA04 /* MessageContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageContext.swift; path = Sources/AssistantV2/Models/MessageContext.swift; sourceTree = "<group>"; };
 		6336F25CC3578380E38CA2E6189BE43D /* DialogNodeOutputGenericDialogNodeOutputResponseTypeImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputGenericDialogNodeOutputResponseTypeImage.swift; path = Sources/AssistantV1/Models/DialogNodeOutputGenericDialogNodeOutputResponseTypeImage.swift; sourceTree = "<group>"; };
 		634447FD2476989B2C949F0609E75861 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
@@ -1303,7 +1303,7 @@
 		8003DDBAACED0C46F8B2E26A62C7284C /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
 		8004DCFAD5F578C55F2200940FA79CB6 /* DialogNodeNextStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeNextStep.swift; path = Sources/AssistantV1/Models/DialogNodeNextStep.swift; sourceTree = "<group>"; };
 		8052233F96816CFC02E93ED0194A7578 /* SpeechToTextSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextSession.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextSession.swift; sourceTree = "<group>"; };
-		806EF617EF02E7D4FBCE3B2B0C559E59 /* ToneAnalyzer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ToneAnalyzer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		806EF617EF02E7D4FBCE3B2B0C559E59 /* ToneAnalyzer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ToneAnalyzer.framework; path = IBMWatsonToneAnalyzerV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80FD5DDFC5A37AB37C7471E1130CFD0D /* CollectionUsage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionUsage.swift; path = Sources/DiscoveryV1/Models/CollectionUsage.swift; sourceTree = "<group>"; };
 		8161C2C4DD5071652B7EE3E42CFD9B0A /* Pods-Algorhythm-AlgorhythmUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Algorhythm-AlgorhythmUITests-Info.plist"; sourceTree = "<group>"; };
 		81731A5E59160A734B7D53D9C2DBFFD3 /* Pods-Algorhythm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Algorhythm-Info.plist"; sourceTree = "<group>"; };
@@ -1324,7 +1324,7 @@
 		87558307574AC2DB3A9618D379250E28 /* DialogNodeContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeContext.swift; path = Sources/AssistantV1/Models/DialogNodeContext.swift; sourceTree = "<group>"; };
 		87A8B4462F42BC6FDE081AC73F699A20 /* Features.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Features.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/Features.swift; sourceTree = "<group>"; };
 		87C30C376E6999BD6475A57E5DD1FC87 /* SpeechRecognitionResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionResult.swift; path = Sources/SpeechToTextV1/Models/SpeechRecognitionResult.swift; sourceTree = "<group>"; };
-		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0696335C9FE0198C4BC358B514C546 /* QueryResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryResult.swift; path = Sources/DiscoveryV1/Models/QueryResult.swift; sourceTree = "<group>"; };
 		8A527197A259B92300D60C1448265C8D /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
 		8A78C3D618912C5615AA550EAD49C9B5 /* Mention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mention.swift; path = Sources/AssistantV1/Models/Mention.swift; sourceTree = "<group>"; };
@@ -1332,7 +1332,7 @@
 		8AAB0186F73E0ADB8389E6753014A463 /* TokenResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenResult.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/TokenResult.swift; sourceTree = "<group>"; };
 		8B4E71366409F08C2438FB1605C7AC2B /* MessageRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageRequest.swift; path = Sources/AssistantV1/Models/MessageRequest.swift; sourceTree = "<group>"; };
 		8B5AC4C8863E593995FE95BCD16AF7C8 /* WarningInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WarningInfo.swift; path = Sources/VisualRecognitionV3/Models/WarningInfo.swift; sourceTree = "<group>"; };
-		8C3276A34DBC367708874C36A03561A3 /* Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3276A34DBC367708874C36A03561A3 /* Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Assistant.framework; path = IBMWatsonAssistantV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C47C143C44BD04AA30FCD58EEE7D229 /* Pods-Algorhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Algorhythm.release.xcconfig"; sourceTree = "<group>"; };
 		8C8C5BCE8E8CDA1E33EC1443B4AFD16C /* opus_header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_header.h; path = Sources/SupportingFiles/Dependencies/Source/opus_header.h; sourceTree = "<group>"; };
 		8C8F8DC5C5A5C5D00B604B976C7B292A /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
@@ -1340,7 +1340,7 @@
 		8D2CF44C70407F082243D11B690B76DA /* BMSCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BMSCore.h; path = Source/Resources/BMSCore.h; sourceTree = "<group>"; };
 		8DAC2547E5B178EECDA94301666ED150 /* OriginalLabelsOut.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OriginalLabelsOut.swift; path = Sources/CompareComplyV1/Models/OriginalLabelsOut.swift; sourceTree = "<group>"; };
 		8DDCD53E75ACAE2E12C6A00E0B194E53 /* RelationsOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelationsOptions.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/RelationsOptions.swift; sourceTree = "<group>"; };
-		8EE8C06ACD0D9CA2C9DE95B090B4C1E7 /* PersonalityInsights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersonalityInsights.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE8C06ACD0D9CA2C9DE95B090B4C1E7 /* PersonalityInsights.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PersonalityInsights.framework; path = IBMWatsonPersonalityInsightsV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2DE678BE97EEA47F8BD9DC0DDE25DE /* SearchResultMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchResultMetadata.swift; path = Sources/AssistantV2/Models/SearchResultMetadata.swift; sourceTree = "<group>"; };
 		8F81A5D1BB1FCF3291658B85612A9C58 /* IdentifiableLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiableLanguage.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiableLanguage.swift; sourceTree = "<group>"; };
 		8FE735D51232CAD25A098F6624AF32D4 /* Pods-Algorhythm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Algorhythm-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -1348,12 +1348,12 @@
 		914E358B6EA0618E9E48BF93EFFABF10 /* BMSAnalyticsAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BMSAnalyticsAPI-umbrella.h"; sourceTree = "<group>"; };
 		92A59D4A1D248875A18307F04CB650F1 /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
 		92BFDB77BFBDE6B6A137967EDCAB99D7 /* RuntimeEntityInterpretation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeEntityInterpretation.swift; path = Sources/AssistantV1/Models/RuntimeEntityInterpretation.swift; sourceTree = "<group>"; };
-		92DA06F1A6F46B36780E65D9557D41B1 /* NaturalLanguageUnderstanding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NaturalLanguageUnderstanding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DA06F1A6F46B36780E65D9557D41B1 /* NaturalLanguageUnderstanding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NaturalLanguageUnderstanding.framework; path = IBMWatsonNaturalLanguageUnderstandingV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9351CE9F3D386BC96C623D6499E8FAF1 /* Pods-AlgorhythmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlgorhythmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9364B3C555693899060D3910F94CDD67 /* IBMWatsonCompareComplyV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonCompareComplyV1.debug.xcconfig; sourceTree = "<group>"; };
 		9409C8A7AF08AEC470179F78DEE682A2 /* BMSAnalyticsAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BMSAnalyticsAPI-Info.plist"; sourceTree = "<group>"; };
 		941E1A45A3BC10BB42FFB4452ECB9379 /* NluEnrichmentEmotion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NluEnrichmentEmotion.swift; path = Sources/DiscoveryV1/Models/NluEnrichmentEmotion.swift; sourceTree = "<group>"; };
-		9471D8A1D623D67C40579F2C840147D8 /* Discovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Discovery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9471D8A1D623D67C40579F2C840147D8 /* Discovery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Discovery.framework; path = IBMWatsonDiscoveryV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B30792DAECC8B1A211461B930AE2EE /* Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		94CAE84055A93BD0D39B2B0A4FDDD0BD /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
 		9533900060CAB1F5A386029989494427 /* EntityMentionCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityMentionCollection.swift; path = Sources/AssistantV1/Models/EntityMentionCollection.swift; sourceTree = "<group>"; };
@@ -1383,7 +1383,7 @@
 		9B4ED786C0424D1F0686F6FDB14E85FD /* IBMWatsonVisualRecognitionV3-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonVisualRecognitionV3-Info.plist"; sourceTree = "<group>"; };
 		9B7F1C6306C42ADF659F19E4CFDB0910 /* IBMWatsonToneAnalyzerV3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonToneAnalyzerV3.release.xcconfig; sourceTree = "<group>"; };
 		9BD13A252F3019A123CCAB2334717306 /* MessageInputStateless.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageInputStateless.swift; path = Sources/AssistantV2/Models/MessageInputStateless.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DC1445E4124C78A51B8E39C9F3D9D8D /* IBMWatsonNaturalLanguageUnderstandingV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonNaturalLanguageUnderstandingV1-Info.plist"; sourceTree = "<group>"; };
 		9DD72D7DD1C10E9AB93AA34CA3E0E9DC /* Pods-Algorhythm-AlgorhythmUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Algorhythm-AlgorhythmUITests.modulemap"; sourceTree = "<group>"; };
 		9DEFBD6F11A9D63BD9E0FF8EAA7216CB /* NetworkMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = "Source/Network Requests/NetworkMonitor.swift"; sourceTree = "<group>"; };
@@ -1436,7 +1436,7 @@
 		AC4FDB084B51E5E497F0752D1E835CE2 /* KeywordsOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeywordsOptions.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/KeywordsOptions.swift; sourceTree = "<group>"; };
 		ACBA3BBD724C0066427DBC10E93405F3 /* IBMWatsonCompareComplyV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonCompareComplyV1-Info.plist"; sourceTree = "<group>"; };
 		ACF20CAB600DACC61CC1431929D49FA9 /* IBMWatsonAssistantV2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonAssistantV2-prefix.pch"; sourceTree = "<group>"; };
-		AD52CA60E9F305E564CA4FF24D0CB8B1 /* opus_header.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = opus_header.c; path = Sources/SupportingFiles/Dependencies/Source/opus_header.c; sourceTree = "<group>"; };
+		AD52CA60E9F305E564CA4FF24D0CB8B1 /* opus_header.c */ = {isa = PBXFileReference; includeInIndex = 1; name = opus_header.c; path = Sources/SupportingFiles/Dependencies/Source/opus_header.c; sourceTree = "<group>"; };
 		ADB705E4A15B4DDB0B252D0B5B9347B9 /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Sources/PersonalityInsightsV3/Models/Profile.swift; sourceTree = "<group>"; };
 		AE2D66B6AA7C3C258944D1E3195A37F5 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/CompareComplyV1/Models/Value.swift; sourceTree = "<group>"; };
 		AECB6E1AFB10108A703F3B4B7E66A70A /* Pods-AlgorhythmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlgorhythmTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -1557,7 +1557,7 @@
 		D76EAF8F3626AD74D27CD6914C8C39BF /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
 		D798E4E42CF5F3F9BB42BE565AEAA702 /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
 		D79FD30896A5F691F223BFE4DAEB1139 /* ContractTerms.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContractTerms.swift; path = Sources/CompareComplyV1/Models/ContractTerms.swift; sourceTree = "<group>"; };
-		D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BC3B6AB1E4137B03F61EEDDCE61162 /* IBMSwiftSDKCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IBMSwiftSDKCore.framework; path = IBMSwiftSDKCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81BDC265BF9DE167A3AF8E4025C30B7 /* UpdatedLabelsIn.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdatedLabelsIn.swift; path = Sources/CompareComplyV1/Models/UpdatedLabelsIn.swift; sourceTree = "<group>"; };
 		D8DED67AAC1F22C916DDA7C40AD38E0E /* TypeLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TypeLabel.swift; path = Sources/CompareComplyV1/Models/TypeLabel.swift; sourceTree = "<group>"; };
 		D8F5C4480AC007C3F56FC00B6A98B3BC /* Contact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Sources/CompareComplyV1/Models/Contact.swift; sourceTree = "<group>"; };
@@ -1616,7 +1616,7 @@
 		ED79D758DF8CEFCC9EA83CE8D5789003 /* CustomModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomModel.swift; path = Sources/TextToSpeechV1/Models/CustomModel.swift; sourceTree = "<group>"; };
 		EDF44FC4055AC900935AC2A39CC9BBA3 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
 		EE3814AF18FA1815446D641C697C1554 /* Pods-Algorhythm-AlgorhythmUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Algorhythm-AlgorhythmUITests-frameworks.sh"; sourceTree = "<group>"; };
-		EE666395B738A2C948417D7A3E26F6B6 /* CompareComply.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CompareComply.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE666395B738A2C948417D7A3E26F6B6 /* CompareComply.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CompareComply.framework; path = IBMWatsonCompareComplyV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA60D7CA582676D965C0AF688E672E3 /* UserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserIdentity.swift; path = Source/Security/Identity/UserIdentity.swift; sourceTree = "<group>"; };
 		EF6CF48CF716AB75664028A82C3C5363 /* IdentifiedLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IdentifiedLanguage.swift; path = Sources/LanguageTranslatorV3/Models/IdentifiedLanguage.swift; sourceTree = "<group>"; };
 		EF7EAD5C349BC5F9B20B185D9001AD97 /* AcousticModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticModel.swift; path = Sources/SpeechToTextV1/Models/AcousticModel.swift; sourceTree = "<group>"; };
@@ -1626,13 +1626,13 @@
 		F0189D555C3052689654125F25DF0F42 /* DeleteCollectionResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeleteCollectionResponse.swift; path = Sources/DiscoveryV1/Models/DeleteCollectionResponse.swift; sourceTree = "<group>"; };
 		F02B903EB9A75E2D1AA2ABFC97208607 /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Sources/CompareComplyV1/Models/Location.swift; sourceTree = "<group>"; };
 		F04397BA51B0BBEDD757C8153978F04B /* RuntimeEntity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuntimeEntity.swift; path = Sources/AssistantV2/Models/RuntimeEntity.swift; sourceTree = "<group>"; };
-		F0C47DA9583345F6EF79C2752D401335 /* Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C47DA9583345F6EF79C2752D401335 /* Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Assistant.framework; path = IBMWatsonAssistantV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19CB9178EF329C5355B97AB30354E4D /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
 		F1FD2A0D3CE7997D7380DF02CBFE3437 /* DialogNodeOutputGenericDialogNodeOutputResponseTypeText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DialogNodeOutputGenericDialogNodeOutputResponseTypeText.swift; path = Sources/AssistantV1/Models/DialogNodeOutputGenericDialogNodeOutputResponseTypeText.swift; sourceTree = "<group>"; };
 		F208BE1022A2B3913AB06030FF29FD95 /* Pods-Algorhythm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Algorhythm-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F24AB151889DDB10380AB6FB731A306B /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/CompareComplyV1/Models/Attribute.swift; sourceTree = "<group>"; };
 		F251193B7AF933C696D9D2BB399D99B0 /* EntityMention.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityMention.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/EntityMention.swift; sourceTree = "<group>"; };
-		F255E2C0C9267055CE2B2069D308D165 /* BMSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BMSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F255E2C0C9267055CE2B2069D308D165 /* BMSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BMSCore.framework; path = BMSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F283AA5C9BEA25EBD8B8C7DB2D046706 /* Timeslice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeslice.swift; path = Sources/DiscoveryV1/Models/Timeslice.swift; sourceTree = "<group>"; };
 		F2A0C92D45EAEF57D6B24F4DC3F9518B /* TableHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableHeaders.swift; path = Sources/CompareComplyV1/Models/TableHeaders.swift; sourceTree = "<group>"; };
 		F2C62EB227E0C83141BBA392F062CBE3 /* Pods-Algorhythm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Algorhythm.modulemap"; sourceTree = "<group>"; };
@@ -1654,7 +1654,7 @@
 		F8AE2A1404F822CF8C106BE3885EE338 /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Sources/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
 		F9A6A26D1C21470C3A9DD1EBF39DE764 /* IBMWatsonVisualRecognitionV3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonVisualRecognitionV3-umbrella.h"; sourceTree = "<group>"; };
 		FA45EA869DC400209C58EA90C3AE42C3 /* BulkClassifyOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulkClassifyOutput.swift; path = Sources/AssistantV2/Models/BulkClassifyOutput.swift; sourceTree = "<group>"; };
-		FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LanguageTranslator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4CD253F8AFFDA1AECB557B3A947BF0 /* LanguageTranslator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LanguageTranslator.framework; path = IBMWatsonLanguageTranslatorV3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA73A1F608CAA971E0AA5A91C34BDCCA /* SpeechToTextState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechToTextState.swift; path = Sources/SpeechToTextV1/WebSockets/SpeechToTextState.swift; sourceTree = "<group>"; };
 		FAC9758C38688A218D4A2D3B8094963B /* CollectionDiskUsage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionDiskUsage.swift; path = Sources/DiscoveryV1/Models/CollectionDiskUsage.swift; sourceTree = "<group>"; };
 		FB0AEC12C7E4CC8D3E8CF1FD3670CC36 /* MetricAggregation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MetricAggregation.swift; path = Sources/DiscoveryV1/Models/MetricAggregation.swift; sourceTree = "<group>"; };
@@ -1668,7 +1668,7 @@
 		FCF9255814420BE9D25C66D88A7FB23A /* DocumentSentimentResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentSentimentResults.swift; path = Sources/NaturalLanguageUnderstandingV1/Models/DocumentSentimentResults.swift; sourceTree = "<group>"; };
 		FD0360084DC1FE0C821658D1C4D6EFD0 /* Word.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Word.swift; path = Sources/SpeechToTextV1/Models/Word.swift; sourceTree = "<group>"; };
 		FD5E1F707FBFB7F7E2D7E04EEB62DC0A /* BaseDeviceIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDeviceIdentity.swift; path = Source/Security/Identity/BaseDeviceIdentity.swift; sourceTree = "<group>"; };
-		FD690F02B20FFAFAE1884E9D5C0B62D1 /* NaturalLanguageClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NaturalLanguageClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD690F02B20FFAFAE1884E9D5C0B62D1 /* NaturalLanguageClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NaturalLanguageClassifier.framework; path = IBMWatsonNaturalLanguageClassifierV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8F6638B8CECF3EB57723973229908D /* NluEnrichmentConcepts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NluEnrichmentConcepts.swift; path = Sources/DiscoveryV1/Models/NluEnrichmentConcepts.swift; sourceTree = "<group>"; };
 		FD91B537D4E100685C50DF94238570C9 /* Completions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Completions.swift; path = Sources/DiscoveryV1/Models/Completions.swift; sourceTree = "<group>"; };
 		FDBD6D937DC98FA6840D8A89AE50D073 /* IBMWatsonVisualRecognitionV3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonVisualRecognitionV3-prefix.pch"; sourceTree = "<group>"; };
@@ -1870,6 +1870,7 @@
 				700ED0306F35A8E627B951F6CEB631F1 /* UtteranceAnalysis.swift */,
 				34ADF4B8B52DF39747503D2A6B6B0D11 /* Support Files */,
 			);
+			name = IBMWatsonToneAnalyzerV3;
 			path = IBMWatsonToneAnalyzerV3;
 			sourceTree = "<group>";
 		};
@@ -1952,6 +1953,7 @@
 				AB36E07EDB32E63849B4B1AAB96FC1CB /* Frameworks */,
 				B5FF5275B2FE1E3D6CCDAA9E338E89AD /* Support Files */,
 			);
+			name = IBMWatsonSpeechToTextV1;
 			path = IBMWatsonSpeechToTextV1;
 			sourceTree = "<group>";
 		};
@@ -1999,6 +2001,7 @@
 				7D608D949065F3974135338A0A4B8B84 /* Frameworks */,
 				8959A4B49272D202F28D1BE6CC2B450F /* Support Files */,
 			);
+			name = IBMWatsonTextToSpeechV1;
 			path = IBMWatsonTextToSpeechV1;
 			sourceTree = "<group>";
 		};
@@ -2051,6 +2054,7 @@
 				8B5AC4C8863E593995FE95BCD16AF7C8 /* WarningInfo.swift */,
 				432B641FC933BFC407494F7541D2995A /* Support Files */,
 			);
+			name = IBMWatsonVisualRecognitionV3;
 			path = IBMWatsonVisualRecognitionV3;
 			sourceTree = "<group>";
 		};
@@ -2117,6 +2121,7 @@
 				DC9D8441FE84232BB41F392AB21533A6 /* RestResponse.swift */,
 				0B92FC94E06685BBDB7E8FD1B0814AEA /* Support Files */,
 			);
+			name = IBMSwiftSDKCore;
 			path = IBMSwiftSDKCore;
 			sourceTree = "<group>";
 		};
@@ -2229,6 +2234,7 @@
 				116DAF8C3FBA46C0617032FE25CA4CE5 /* XPathPatterns.swift */,
 				8DCAF828B32C03886566192DF1CF98DA /* Support Files */,
 			);
+			name = IBMWatsonDiscoveryV1;
 			path = IBMWatsonDiscoveryV1;
 			sourceTree = "<group>";
 		};
@@ -2247,6 +2253,7 @@
 				2098C488BAAFA72D6E4763D6C313C079 /* Shared.swift */,
 				2C0E0245616A8B497A1539CB86945451 /* Support Files */,
 			);
+			name = IBMWatsonNaturalLanguageClassifierV1;
 			path = IBMWatsonNaturalLanguageClassifierV1;
 			sourceTree = "<group>";
 		};
@@ -2258,6 +2265,7 @@
 				62C45522FAB15BDA6DB397753B4A9C4B /* RequestMetadata.swift */,
 				D6D78542A96F85F115E89202DC74D609 /* Support Files */,
 			);
+			name = BMSAnalyticsAPI;
 			path = BMSAnalyticsAPI;
 			sourceTree = "<group>";
 		};
@@ -2345,8 +2353,9 @@
 				C6577FDC6B4F58FA40595ECC1BE25D3D /* WorkspaceSystemSettingsTooling.swift */,
 				49DE2E71DA4477FF6369E9C7EAC21D5E /* Support Files */,
 			);
+			name = IBMWatsonAssistantV1;
 			path = IBMWatsonAssistantV1;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		660EB3F012682A5B1CABB35835791B20 /* Targets Support Files */ = {
 			isa = PBXGroup;
@@ -2527,6 +2536,7 @@
 				AE2D66B6AA7C3C258944D1E3195A37F5 /* Value.swift */,
 				7C94CE53F80F6E729C277A678A4991F4 /* Support Files */,
 			);
+			name = IBMWatsonCompareComplyV1;
 			path = IBMWatsonCompareComplyV1;
 			sourceTree = "<group>";
 		};
@@ -2577,6 +2587,7 @@
 				01E8357C9219258735C7E51E717B965B /* Warning.swift */,
 				81CBB752C97B1C17FD128AFD04272BCC /* Support Files */,
 			);
+			name = IBMWatsonPersonalityInsightsV3;
 			path = IBMWatsonPersonalityInsightsV3;
 			sourceTree = "<group>";
 		};
@@ -2603,6 +2614,7 @@
 				EEA60D7CA582676D965C0AF688E672E3 /* UserIdentity.swift */,
 				BC3D9C62A38E4E3C696BA3EF289D65BD /* Support Files */,
 			);
+			name = BMSCore;
 			path = BMSCore;
 			sourceTree = "<group>";
 		};
@@ -2674,6 +2686,7 @@
 				61756818BE21199712C3B56FD015B2FE /* WSEngine.swift */,
 				7F64D0E9768D0E53E4D7E3082B7FA0C8 /* Support Files */,
 			);
+			name = Starscream;
 			path = Starscream;
 			sourceTree = "<group>";
 		};
@@ -2750,6 +2763,7 @@
 				8C8F8DC5C5A5C5D00B604B976C7B292A /* Shared.swift */,
 				817EAFD69A400A29556862EB26CC92E0 /* Support Files */,
 			);
+			name = IBMWatsonAssistantV2;
 			path = IBMWatsonAssistantV2;
 			sourceTree = "<group>";
 		};
@@ -2823,6 +2837,7 @@
 				0F90F997C952930818F497CCF1090B38 /* TranslationResult.swift */,
 				305FC5B1C8740006D29D0F7CD238302F /* Support Files */,
 			);
+			name = IBMWatsonLanguageTranslatorV3;
 			path = IBMWatsonLanguageTranslatorV3;
 			sourceTree = "<group>";
 		};
@@ -2899,6 +2914,7 @@
 				8AAB0186F73E0ADB8389E6753014A463 /* TokenResult.swift */,
 				79EE3A29CB50824594654761F12E802A /* Support Files */,
 			);
+			name = IBMWatsonNaturalLanguageUnderstandingV1;
 			path = IBMWatsonNaturalLanguageUnderstandingV1;
 			sourceTree = "<group>";
 		};
@@ -3498,7 +3514,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (

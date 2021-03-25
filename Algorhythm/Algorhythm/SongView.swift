@@ -16,6 +16,10 @@ struct SongView : View {
     
     @EnvironmentObject var addedSong : AddedSong
     
+    @ObservedObject var audioRecorder: AudioRecorder
+    
+    
+    
     
     var body: some View{
         ScrollView(.vertical){
@@ -36,6 +40,29 @@ struct SongView : View {
                 }
                 self.isOnAppear = true
             })
+            VStack{
+                if audioRecorder.recording == false {
+                    Button(action: {audioRecorder.startRecording()}, label: {
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 100, height: 100)
+                            .clipped()
+                            .foregroundColor(.red)
+                            .padding(.bottom, 40)
+                    })
+                }else{
+                    Button(action: {audioRecorder.stopRecording()}, label: {
+                        Image(systemName: "stop.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 100, height: 100)
+                            .clipped()
+                            .foregroundColor(.red)
+                            .padding(.bottom, 40)
+                    })
+                }
+            }
         }
         
     }
