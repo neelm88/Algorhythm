@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		156F9CB037A74195C16E655E /* Pods_Algorhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50590E9116BDD0C54805D8D1 /* Pods_Algorhythm.framework */; };
-		4A2D95C92D82FC62F9ED1E4B /* Pods_AlgorhythmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B00175ABBD020106EF8A0D /* Pods_AlgorhythmTests.framework */; };
 		6F0BD22E25F185D70041D3A6 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0BD22D25F185D70041D3A6 /* PageViewController.swift */; };
 		6F0BD23325F186DB0041D3A6 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0BD23225F186DB0041D3A6 /* PageView.swift */; };
 		6F0C2B91260A87EC00FB8258 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0C2B90260A87EC00FB8258 /* ChatView.swift */; };
-		6F0C2BB0260BA7D000FB8258 /* AssistantV1 in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0C2BAF260BA7D000FB8258 /* AssistantV1 */; };
-		6F0C2BB2260BA7D000FB8258 /* AssistantV2 in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0C2BB1260BA7D000FB8258 /* AssistantV2 */; };
+		6F0C2BB0260BA7D000FB8258 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0C2BAF260BA7D000FB8258 /* SwiftPackageProductDependency */; };
+		6F0C2BB2260BA7D000FB8258 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0C2BB1260BA7D000FB8258 /* SwiftPackageProductDependency */; };
 		6F52739625D336A6002A06FD /* SongSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52739525D336A6002A06FD /* SongSelectionView.swift */; };
 		6F52739B25D338CA002A06FD /* SongRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52739A25D338CA002A06FD /* SongRow.swift */; };
 		6F5273A025D33F82002A06FD /* NewSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F52739F25D33F82002A06FD /* NewSongView.swift */; };
@@ -27,7 +25,6 @@
 		6FD2464C25C9F99A00E87D35 /* AlgorhythmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2464B25C9F99A00E87D35 /* AlgorhythmTests.swift */; };
 		6FD2465725C9F99A00E87D35 /* AlgorhythmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2465625C9F99A00E87D35 /* AlgorhythmUITests.swift */; };
 		6FE9296E26014A47004DFB85 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9296D26014A47004DFB85 /* AudioRecorder.swift */; };
-		D8214209E2D3707D71F46BE2 /* Pods_Algorhythm_AlgorhythmUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD570495EA0945A4BD02D16 /* Pods_Algorhythm_AlgorhythmUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06A3A1689399343C18E43AAC /* Pods-Algorhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorhythm.release.xcconfig"; path = "Target Support Files/Pods-Algorhythm/Pods-Algorhythm.release.xcconfig"; sourceTree = "<group>"; };
-		4FC0CCC8E6BF1C39D2CAA5F9 /* Pods-AlgorhythmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgorhythmTests.release.xcconfig"; path = "Target Support Files/Pods-AlgorhythmTests/Pods-AlgorhythmTests.release.xcconfig"; sourceTree = "<group>"; };
-		50590E9116BDD0C54805D8D1 /* Pods_Algorhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algorhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AD570495EA0945A4BD02D16 /* Pods_Algorhythm_AlgorhythmUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algorhythm_AlgorhythmUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0BD22D25F185D70041D3A6 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		6F0BD23225F186DB0041D3A6 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		6F0C2B90260A87EC00FB8258 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -74,11 +67,6 @@
 		6FD2465625C9F99A00E87D35 /* AlgorhythmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorhythmUITests.swift; sourceTree = "<group>"; };
 		6FD2465825C9F99A00E87D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FE9296D26014A47004DFB85 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
-		94B00175ABBD020106EF8A0D /* Pods_AlgorhythmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgorhythmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADDA9FF8540BCBF5F7967AAF /* Pods-Algorhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorhythm.debug.xcconfig"; path = "Target Support Files/Pods-Algorhythm/Pods-Algorhythm.debug.xcconfig"; sourceTree = "<group>"; };
-		C46F5C3DCCA1DDD040CE5514 /* Pods-Algorhythm-AlgorhythmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorhythm-AlgorhythmUITests.release.xcconfig"; path = "Target Support Files/Pods-Algorhythm-AlgorhythmUITests/Pods-Algorhythm-AlgorhythmUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D7918F8566E6DE7ECD1D0E65 /* Pods-AlgorhythmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgorhythmTests.debug.xcconfig"; path = "Target Support Files/Pods-AlgorhythmTests/Pods-AlgorhythmTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F778421193403D5BF534028D /* Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig"; path = "Target Support Files/Pods-Algorhythm-AlgorhythmUITests/Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F0C2BB0260BA7D000FB8258 /* AssistantV1 in Frameworks */,
-				156F9CB037A74195C16E655E /* Pods_Algorhythm.framework in Frameworks */,
-				6F0C2BB2260BA7D000FB8258 /* AssistantV2 in Frameworks */,
+				6F0C2BB0260BA7D000FB8258 /* BuildFile in Frameworks */,
+				6F0C2BB2260BA7D000FB8258 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2D95C92D82FC62F9ED1E4B /* Pods_AlgorhythmTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,23 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8214209E2D3707D71F46BE2 /* Pods_Algorhythm_AlgorhythmUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66BABFF2345FC56CA648BCBF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				50590E9116BDD0C54805D8D1 /* Pods_Algorhythm.framework */,
-				6AD570495EA0945A4BD02D16 /* Pods_Algorhythm_AlgorhythmUITests.framework */,
-				94B00175ABBD020106EF8A0D /* Pods_AlgorhythmTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6FD2462D25C9F99800E87D35 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +104,6 @@
 				6FD2465525C9F99A00E87D35 /* AlgorhythmUITests */,
 				6FD2463725C9F99900E87D35 /* Products */,
 				BDC74978A2F3185E7B9FEE7A /* Pods */,
-				66BABFF2345FC56CA648BCBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,12 +168,6 @@
 		BDC74978A2F3185E7B9FEE7A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ADDA9FF8540BCBF5F7967AAF /* Pods-Algorhythm.debug.xcconfig */,
-				06A3A1689399343C18E43AAC /* Pods-Algorhythm.release.xcconfig */,
-				F778421193403D5BF534028D /* Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig */,
-				C46F5C3DCCA1DDD040CE5514 /* Pods-Algorhythm-AlgorhythmUITests.release.xcconfig */,
-				D7918F8566E6DE7ECD1D0E65 /* Pods-AlgorhythmTests.debug.xcconfig */,
-				4FC0CCC8E6BF1C39D2CAA5F9 /* Pods-AlgorhythmTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -211,11 +179,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FD2465B25C9F99A00E87D35 /* Build configuration list for PBXNativeTarget "Algorhythm" */;
 			buildPhases = (
-				655B8C60DB4EB622F06A0D8B /* [CP] Check Pods Manifest.lock */,
 				6FD2463225C9F99800E87D35 /* Sources */,
 				6FD2463325C9F99800E87D35 /* Frameworks */,
 				6FD2463425C9F99800E87D35 /* Resources */,
-				A07407EE949626F7EFDE84CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,8 +189,8 @@
 			);
 			name = Algorhythm;
 			packageProductDependencies = (
-				6F0C2BAF260BA7D000FB8258 /* AssistantV1 */,
-				6F0C2BB1260BA7D000FB8258 /* AssistantV2 */,
+				6F0C2BAF260BA7D000FB8258 /* SwiftPackageProductDependency */,
+				6F0C2BB1260BA7D000FB8258 /* SwiftPackageProductDependency */,
 			);
 			productName = Algorhythm;
 			productReference = 6FD2463625C9F99900E87D35 /* Algorhythm.app */;
@@ -234,7 +200,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FD2465E25C9F99A00E87D35 /* Build configuration list for PBXNativeTarget "AlgorhythmTests" */;
 			buildPhases = (
-				C87653436D64CD006EBB7078 /* [CP] Check Pods Manifest.lock */,
 				6FD2464325C9F99A00E87D35 /* Sources */,
 				6FD2464425C9F99A00E87D35 /* Frameworks */,
 				6FD2464525C9F99A00E87D35 /* Resources */,
@@ -253,11 +218,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FD2466125C9F99A00E87D35 /* Build configuration list for PBXNativeTarget "AlgorhythmUITests" */;
 			buildPhases = (
-				A2057AFBA9CBFD521E2D75A3 /* [CP] Check Pods Manifest.lock */,
 				6FD2464E25C9F99A00E87D35 /* Sources */,
 				6FD2464F25C9F99A00E87D35 /* Frameworks */,
 				6FD2465025C9F99A00E87D35 /* Resources */,
-				3A81D7B6E8EA0788F24CBE3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,7 +264,7 @@
 			);
 			mainGroup = 6FD2462D25C9F99800E87D35;
 			packageReferences = (
-				6F0C2BAE260BA7D000FB8258 /* XCRemoteSwiftPackageReference "swift-sdk" */,
+				6F0C2BAE260BA7D000FB8258 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 6FD2463725C9F99900E87D35 /* Products */;
 			projectDirPath = "";
@@ -339,109 +302,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3A81D7B6E8EA0788F24CBE3B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Algorhythm-AlgorhythmUITests/Pods-Algorhythm-AlgorhythmUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Algorhythm-AlgorhythmUITests/Pods-Algorhythm-AlgorhythmUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Algorhythm-AlgorhythmUITests/Pods-Algorhythm-AlgorhythmUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		655B8C60DB4EB622F06A0D8B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Algorhythm-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A07407EE949626F7EFDE84CF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Algorhythm/Pods-Algorhythm-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Algorhythm/Pods-Algorhythm-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Algorhythm/Pods-Algorhythm-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2057AFBA9CBFD521E2D75A3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Algorhythm-AlgorhythmUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C87653436D64CD006EBB7078 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AlgorhythmTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FD2463225C9F99800E87D35 /* Sources */ = {
@@ -613,7 +473,6 @@
 		};
 		6FD2465C25C9F99A00E87D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADDA9FF8540BCBF5F7967AAF /* Pods-Algorhythm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -636,7 +495,6 @@
 		};
 		6FD2465D25C9F99A00E87D35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06A3A1689399343C18E43AAC /* Pods-Algorhythm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -659,7 +517,6 @@
 		};
 		6FD2465F25C9F99A00E87D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7918F8566E6DE7ECD1D0E65 /* Pods-AlgorhythmTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -681,7 +538,6 @@
 		};
 		6FD2466025C9F99A00E87D35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FC0CCC8E6BF1C39D2CAA5F9 /* Pods-AlgorhythmTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -703,7 +559,6 @@
 		};
 		6FD2466225C9F99A00E87D35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F778421193403D5BF534028D /* Pods-Algorhythm-AlgorhythmUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -723,7 +578,6 @@
 		};
 		6FD2466325C9F99A00E87D35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C46F5C3DCCA1DDD040CE5514 /* Pods-Algorhythm-AlgorhythmUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -783,7 +637,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6F0C2BAE260BA7D000FB8258 /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+		6F0C2BAE260BA7D000FB8258 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/watson-developer-cloud/swift-sdk";
 			requirement = {
@@ -794,14 +648,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6F0C2BAF260BA7D000FB8258 /* AssistantV1 */ = {
+		6F0C2BAF260BA7D000FB8258 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6F0C2BAE260BA7D000FB8258 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			package = 6F0C2BAE260BA7D000FB8258 /* RemoteSwiftPackageReference */;
 			productName = AssistantV1;
 		};
-		6F0C2BB1260BA7D000FB8258 /* AssistantV2 */ = {
+		6F0C2BB1260BA7D000FB8258 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6F0C2BAE260BA7D000FB8258 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			package = 6F0C2BAE260BA7D000FB8258 /* RemoteSwiftPackageReference */;
 			productName = AssistantV2;
 		};
 /* End XCSwiftPackageProductDependency section */
