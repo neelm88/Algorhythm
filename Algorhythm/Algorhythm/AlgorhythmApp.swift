@@ -28,7 +28,7 @@ struct AlgorhythmApp: App {
     }
     var body: some Scene {
         WindowGroup{
-            SongSelectionView()
+            TabsView()
         }
     }
 }
