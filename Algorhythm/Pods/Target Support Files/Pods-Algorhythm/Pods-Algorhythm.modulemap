@@ -1,0 +1,6 @@
+module Pods_Algorhythm {
+  umbrella header "Pods-Algorhythm-umbrella.h"
+
+  export *
+  module * { export * }
+}

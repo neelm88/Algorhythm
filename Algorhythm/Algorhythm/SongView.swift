@@ -7,12 +7,14 @@
 
 import Foundation
 import SwiftUI
+import SwiftSocket
 
 struct SongView : View {
     
     @State var song : SongInfo
     @State var imageViews : [ImageView] = []
     @State var isOnAppear = false
+    @State private var showingSheet = false
     
     @EnvironmentObject var addedSong : AddedSong
     
@@ -21,25 +23,41 @@ struct SongView : View {
     
     
     
+    
+    
     var body: some View{
         ScrollView(.vertical){
-            VStack(alignment: .leading){
-                Text(song.name)
-                    .font(.title)
-                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                Text(song.artist)
-                    .font(.subheadline)
-                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                if isOnAppear{
-                    PageView(pages: imageViews)
-                        .aspectRatio(contentMode: .fit)
+                VStack(alignment: .leading){
+                    HStack{
+                        VStack(alignment: .leading){
+                        Text(song.name)
+                            .font(.title)
+                            .padding(.leading, 10)
+                        Text(song.artist)
+                            .font(.subheadline)
+                            .padding(.leading, 10)
+                        }
+                        Spacer()
+                        Button("Show Recordings") {
+                            showingSheet.toggle()
+                        }.sheet(isPresented: $showingSheet) {
+                                    RecordingsView(audioRecorder: audioRecorder)
+                        }
+                    }
+                    if isOnAppear{
+                        PageView(pages: imageViews)
+                            .aspectRatio(contentMode: .fit)
+                    }
                 }
+                
+                
             }.onAppear(perform: {
                 for data in self.song.photo{
                     imageViews.append(ImageView(image:  UIImage(data: data)!))
                 }
                 self.isOnAppear = true
             })
+            Spacer()
             VStack{
                 if audioRecorder.recording == false {
                     Button(action: {audioRecorder.startRecording()}, label: {
@@ -66,4 +84,61 @@ struct SongView : View {
         }
         
     }
+
+
+struct RecordingsView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var audioRecorder : AudioRecorder
+    var body: some View {
+        List {
+            ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
+                RecordingRow(audioURL: recording.fileURL)
+            }
+            .onDelete(perform: delete)
+        }
+    }
+    
+    func delete(at offsets: IndexSet) {
+            var urlsToDelete = [URL]()
+            for index in offsets {
+                urlsToDelete.append(audioRecorder.recordings[index].fileURL)
+            }
+            audioRecorder.deleteRecording(urlsToDelete: urlsToDelete)
+            
+            //audioRecorder.fetchRecordings()
+        }
+}
+
+struct RecordingRow: View {
+    
+    var audioURL: URL
+    
+    @ObservedObject var audioPlayer = AudioPlayer()
+    
+    var body: some View {
+        HStack {
+            Text("\(audioURL.lastPathComponent)")
+            Spacer()
+            if audioPlayer.isPlaying == false {
+                Button(action: {
+                    self.audioPlayer.startPlayback(audio: self.audioURL)
+                }) {
+                    Image(systemName: "play.circle")
+                        .imageScale(.large)
+                }
+            } else {
+                Button(action: {
+                    self.audioPlayer.stopPlayback()
+                }) {
+                    Image(systemName: "stop.fill")
+                        .imageScale(.large)
+                }
+            }
+        }
+    }
+}
+
+struct Recording {
+    let fileURL: URL
+    let createdAt: Date
 }

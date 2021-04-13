@@ -17,7 +17,7 @@ struct SongSelectionView : View{
     var body: some View {
         NavigationView{
             VStack{
-                NavigationLink(destination: ChatView()) {
+                NavigationLink(destination: NewSongView()) {
                     Text("New Song")
                     .onAppear(perform: {
                         if addedSong.added{
@@ -33,7 +33,7 @@ struct SongSelectionView : View{
                 }
                 List {
                     ForEach(songs, id: \.name) { song in
-                        NavigationLink(destination: SongView(song: song, audioRecorder: AudioRecorder())) {
+                        NavigationLink(destination: SongView(song: song, audioRecorder: AudioRecorder(songName: "\(song.artist)\(song.name)"))) {
                             SongRow(info: song)
                                 
                         }

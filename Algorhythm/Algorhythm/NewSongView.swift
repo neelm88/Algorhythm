@@ -59,7 +59,7 @@ struct NewSongView : View{
                         .padding(.horizontal)
                         }
                     .disabled(!imageIsSelected || name == "" || artist == "")
-                    NavigationLink(destination: SongView(song: song ?? SongInfo(photos: imageViews, name: name, artist: artist), audioRecorder: AudioRecorder()), isActive: $isLinkActive) {
+                NavigationLink(destination: SongView(song: song ?? SongInfo(photos: imageViews, name: name, artist: artist), audioRecorder: AudioRecorder(songName: "\(song?.artist)\(song?.name)")), isActive: $isLinkActive) {
                             SongRow(info: song ?? SongInfo(photos: imageViews, name: name, artist: artist))
                     }
                     .hidden()
