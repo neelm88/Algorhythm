@@ -1,0 +1,6 @@
+module Pods_Algorhythm_AlgorhythmUITests {
+  umbrella header "Pods-Algorhythm-AlgorhythmUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
