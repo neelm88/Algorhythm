@@ -90,10 +90,17 @@ struct SongView : View {
         }
     
     func stopRecording(){
+        let fileManager = FileManager.default
         audioRecorder.stopRecording()
-        let data: Data = imageViews[0].image.pngData()!
-        let result = client.send(data: data)
-        print(result)
+        do{
+            let data: Data = try Data(contentsOf: audioRecorder.recordings[audioRecorder.recordings.count-1].fileURL)
+            let result = client.send(data: data)
+            print(result)
+        }catch{
+            print("💩")
+        }
+                
+        
         
     }
         
