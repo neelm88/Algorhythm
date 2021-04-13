@@ -20,7 +20,7 @@ struct SongView : View {
     
     @ObservedObject var audioRecorder: AudioRecorder
     
-    
+    @State var client = TCPClient(address: "www.apple.com", port: 80)
     
     
     
@@ -56,6 +56,12 @@ struct SongView : View {
                     imageViews.append(ImageView(image:  UIImage(data: data)!))
                 }
                 self.isOnAppear = true
+                switch client.connect(timeout: 10) {
+                   case .success:
+                     print("yay")
+                   case .failure(let error):
+                     print("💩")
+                 }
             })
             Spacer()
             VStack{
@@ -70,7 +76,7 @@ struct SongView : View {
                             .padding(.bottom, 40)
                     })
                 }else{
-                    Button(action: {audioRecorder.stopRecording()}, label: {
+                    Button(action: {stopRecording()}, label: {
                         Image(systemName: "stop.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
@@ -82,6 +88,14 @@ struct SongView : View {
                 }
             }
         }
+    
+    func stopRecording(){
+        audioRecorder.stopRecording()
+        let data: Data = imageViews[0].image.pngData()!
+        let result = client.send(data: data)
+        print(result)
+        
+    }
         
     }
 
