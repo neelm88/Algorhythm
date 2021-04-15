@@ -41,7 +41,7 @@ struct SongView : View {
                         Button("Show Recordings") {
                             showingSheet.toggle()
                         }.sheet(isPresented: $showingSheet) {
-                                    RecordingsView(audioRecorder: audioRecorder)
+                                    RecordingsView(audioRecorder: audioRecorder, client: client)
                         }
                     }
                     if isOnAppear{
@@ -92,13 +92,7 @@ struct SongView : View {
     func stopRecording(){
         let fileManager = FileManager.default
         audioRecorder.stopRecording()
-        do{
-            let data: Data = try Data(contentsOf: audioRecorder.recordings[audioRecorder.recordings.count-1].fileURL)
-            let result = client.send(data: data)
-            print(result)
-        }catch{
-            print("💩")
-        }
+        
                 
         
         
@@ -110,10 +104,11 @@ struct SongView : View {
 struct RecordingsView: View {
     @Environment(\.presentationMode) var presentationMode
     @ObservedObject var audioRecorder : AudioRecorder
+    var client : TCPClient
     var body: some View {
         List {
             ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
-                RecordingRow(audioURL: recording.fileURL)
+                RecordingRow(audioURL: recording.fileURL, client: client)
             }
             .onDelete(perform: delete)
         }
@@ -133,13 +128,14 @@ struct RecordingsView: View {
 struct RecordingRow: View {
     
     var audioURL: URL
-    
+    var client : TCPClient
     @ObservedObject var audioPlayer = AudioPlayer()
     
     var body: some View {
         HStack {
             Text("\(audioURL.lastPathComponent)")
             Spacer()
+            Button("Send", action: sendMusic)
             if audioPlayer.isPlaying == false {
                 Button(action: {
                     self.audioPlayer.startPlayback(audio: self.audioURL)
@@ -155,6 +151,16 @@ struct RecordingRow: View {
                         .imageScale(.large)
                 }
             }
+        }
+    }
+    
+    func sendMusic(){
+        do{
+            let data: Data = try Data(contentsOf: audioURL)
+            let result = client.send(data: data)
+            print(result)
+        }catch{
+            print("💩")
         }
     }
 }
