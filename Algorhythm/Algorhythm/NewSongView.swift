@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import PhotosUI
+import SwiftSocket
 
 struct NewSongView : View{
     @State var currSongs : [SongInfo] = []
@@ -20,8 +21,9 @@ struct NewSongView : View{
     @State var images : [UIImage] = []
     @State var imageViews : [ImageView] = [ImageView(image: UIImage())]
     @State private var pickerType : UIImagePickerController.SourceType = .photoLibrary
-    
     @EnvironmentObject var addedSong : AddedSong
+    
+    @State var client = TCPClient(address: "address", port: 80)
     
     var body : some View {
         ScrollView(.vertical){
@@ -48,6 +50,17 @@ struct NewSongView : View{
                         }
                         isLinkActive = true
                         self.addedSong.added = true
+                        
+                        for i in images{
+                            switch client.send(data: i.pngData()!){
+                            case .success:
+                                print("image sent!")
+                            case .failure(let error):
+                                print("💩")
+                            }
+                        }
+                        
+                        //read response
                     }){
                         HStack{
                             Text("Save")
@@ -127,6 +140,13 @@ struct NewSongView : View{
             name = ""
             song = nil
             isLinkActive = false
+            
+            switch client.connect(timeout: 10) {
+               case .success:
+                 print("yay")
+               case .failure(let error):
+                 print("💩")
+             }
         })
     }
     
