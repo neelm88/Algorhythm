@@ -1,6 +1,5 @@
 import socket
 import codecs
-import pyaudio
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -17,27 +16,32 @@ TEMPO = 75
 notes = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"]
 # sheet_notes, sheet_timesteps = parse_sheet_music('output/03.txt',TEMPO)
 detected = [[]]
-with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
-    s.bind((HOST,PORT))
-    s.listen()
-    conn, addr = s.accept()
-    with conn:
-        print('Connected by', addr)
-        while True:
-            data = conn.recv(CHUNK)
-            if not data:
-                break
-            data = np.frombuffer(data,dtype=np.int16)
-            freq = get_freq(data,CHUNK,RATE)
-            dbs = get_dbs(data)
-            if freq >= 8 and dbs >= 30:
-                m = round(((math.log(freq/440)/math.log(2))*12)+69)
-                note = notes[m % 12]
-                octave = int(m/12) - 1
-                str_note = f"{note}{octave}"
-                print(f"Volume: {dbs} dB")
-                print(f"Frequency: {freq} Hz")
-                print(f"Note: {str_note} ")
+while True:
+    with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
+        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        s.bind((HOST,PORT))
+        s.listen()
+        conn, addr = s.accept()
+        with conn:
+            print('Connected by', addr)
+            while True:
+                data = conn.recv(CHUNK)
+                if not data:
+                    break
+                data = np.frombuffer(data,dtype=np.int16)
+                if data.shape[0] != CHUNK/2:
+                    break
+                print(data.shape)
+                freq = get_freq(data,CHUNK,RATE)
+                dbs = get_dbs(data)
+                if freq >= 8 and dbs >= 30:
+                    m = round(((math.log(freq/440)/math.log(2))*12)+69)
+                    note = notes[m % 12]
+                    octave = int(m/12) - 1
+                    str_note = f"{note}{octave}"
+                    print(f"Volume: {dbs} dB")
+                    print(f"Frequency: {freq} Hz")
+                    print(f"Note: {str_note} ")
 
 
 # final_data = []
