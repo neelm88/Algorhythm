@@ -30,6 +30,7 @@ last_note = ""
 # create a numpy array holding a single read of audio data
 for i in range(1000):
     data = np.frombuffer(stream.read(CHUNK),dtype=np.int16)
+    print(data)
     freq = get_freq(data)
     dbs = get_dbs(data)
     if freq >= 8 and dbs >= 35:
