@@ -20,7 +20,7 @@ struct SongView : View {
     
     @ObservedObject var audioRecorder: AudioRecorder
     
-    @State var client = TCPClient(address: "www.apple.com", port: 80)
+    @State var client = TCPClient(address: "127.0.0.1", port: 2020)
     
     
     

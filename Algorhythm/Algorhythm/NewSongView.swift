@@ -23,7 +23,7 @@ struct NewSongView : View{
     @State private var pickerType : UIImagePickerController.SourceType = .photoLibrary
     @EnvironmentObject var addedSong : AddedSong
     
-    @State var client = TCPClient(address: "address", port: 80)
+    @State var client = TCPClient(address: "127.0.0.1", port: 8080)
     
     var body : some View {
         ScrollView(.vertical){
@@ -56,7 +56,8 @@ struct NewSongView : View{
                             case .success:
                                 print("image sent!")
                             case .failure(let error):
-                                print("💩")
+                                print(error)
+                                print("x💩")
                             }
                         }
                         

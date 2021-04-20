@@ -1,5 +1,5 @@
 import socket
-
+import codecs
 HOST = '127.0.0.1'
 PORT = 2020
 with socket.socket(socket.AF_INET,socket.SOCK_STREAM) as s:
