@@ -20,6 +20,44 @@ struct ChatView: View {
     // save context to state to continue the conversation later
     @State var context: Context?
     
+    let watsonEnd = URL(string: "https://api.us-south.assistant.watson.cloud.ibm.com/instances/15388fdc-8436-4a4b-9963-a63f73d6c7f0/v2/assistants/fcc9506f-de72-4d1a-a610-8f71313de6da/message?version=2020-09-24")!
+    
+    
+    func askWatson(message:Dictionary<String, Dictionary<String, String>>) {
+        var request = URLRequest(url:watsonEnd)
+        let b64login = String("apikey:AMDrjRAZOjSNg5qAuMYN5u-nebrkxubVvl9prClA649F")
+        let b64data =  b64login.data(using: String.Encoding.utf8)
+        let b64loginString = b64data!.base64EncodedString()
+        request.setValue("Basic \(b64loginString)",
+                         forHTTPHeaderField:"Authorization")
+        request.setValue("application/json",
+                         forHTTPHeaderField: "Content-Type"
+        )
+    
+        let rbodyJson = try? JSONSerialization.data(
+            withJSONObject: message,
+            options: []
+        )
+        
+        request.httpMethod = "POST"
+        request.httpBody = rbodyJson
+        
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) {
+            (data, response, error) in
+            print("DONE RUNNING ASK QUERY")
+            if let error = error {
+                print("HTTP Request error!:", error)
+            } else if let mdata = data {
+                print("Returned data: ", String(data: mdata, encoding: String.Encoding.utf8))
+            } else {
+                print("Unhandled error!")
+            }
+        }
+        
+        task.resume()
+    }
+    
     let workspace = "https://api.us-south.assistant.watson.cloud.ibm.com/instances/15388fdc-8436-4a4b-9963-a63f73d6c7f0/v1/workspaces/875f04c0-4740-4ac3-a426-f7ff0bca2f38/message"
 
     
@@ -42,6 +80,9 @@ struct ChatView: View {
         }
         .navigationBarTitle("General")
         .onAppear(perform: {
+            var message = ["input": ["text": "help"]]
+            print(askWatson(message:message))
+            
             let authenticator = WatsonIAMAuthenticator(apiKey: "AMDrjRAZOjSNg5qAuMYN5u-nebrkxubVvl9prClA649F")
            
             assistant = Assistant(version: "2020-04-01", authenticator: authenticator)
@@ -60,16 +101,16 @@ struct ChatView: View {
 //            }
             assistant!.message(workspaceID: workspace) { response, error in
                if let error = error {
-                  print(error)
+             //     print(error)
                }
 
                guard let message = response?.result else {
-                   print("Failed to get the message.")
+               //    print("Failed to get the message.")
                    return
                }
 
-               print("Conversation ID: \(message.context.conversationID!)")
-               print("Response: \(message.output.text.joined())")
+              // print("Conversation ID: \(message.context.conversationID!)")
+               //print("Response: \(message.output.text.joined())")
                 
                 self.context = message.context
             }
@@ -82,7 +123,7 @@ struct ChatView: View {
         //let input = MessageInput(text: text)
         //let input = MessageInput(messageType: "text", text: "Hello")
         
-        print(sessionID)
+      //  print(sessionID)
         
 //        assistant!.message(assistantID: "0dddf61e-0eaa-400c-ae3b-b1d980adf947", sessionID: sessionID, input: input) {
 //          response, error in
@@ -95,21 +136,21 @@ struct ChatView: View {
 //          print(message)
 //        }
         
-        print("Request: When are you open?")
+  //      print("Request: When are you open?")
         let input = MessageInput(text: "When are you open?")
 
         assistant!.message(workspaceID: workspace, input: input, context: self.context) { response, error in
            if let error = error {
-              print(error)
+   //           print(error)
            }
 
            guard let message = response?.result else {
-               print("Failed to get the message.")
+   //            print("Failed to get the message.")
                return
            }
 
-           print("Conversation ID: \(message.context.conversationID!)")
-           print("Response: \(message.output.text.joined())")
+  //         print("Conversation ID: \(message.context.conversationID!)")
+    //       print("Response: \(message.output.text.joined())")
 
            // Update the context
            self.context = message.context
