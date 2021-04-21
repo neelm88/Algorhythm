@@ -175,6 +175,7 @@ struct RecordingRow: View {
             dataRec = client.read(1024 * 4)
         }
         self.acc = dataRec!.withUnsafeBytes { $0.load(as: Float.self) }
+        sent = true
         
         
         
