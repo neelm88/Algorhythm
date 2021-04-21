@@ -52,7 +52,9 @@ struct NewSongView : View{
                         self.addedSong.added = true
                         
                         for i in images{
-                            switch client.send(data: i.pngData()!){
+                            let imageData = i.pngData()!
+                            let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+                            switch client.send(string: strBase64){
                             case .success:
                                 print("image sent!")
                             case .failure(let error):
