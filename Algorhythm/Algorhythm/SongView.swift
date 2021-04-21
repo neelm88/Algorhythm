@@ -140,7 +140,7 @@ struct RecordingRow: View {
             if !sent{
                 Button("Send", action: sendMusic)
             }else{
-                Text("\(self.acc)")
+                Text("\(self.acc.truncate(places: 2))%")
             }
             
             if audioPlayer.isPlaying == false {
@@ -190,4 +190,10 @@ struct RecordingRow: View {
 struct Recording {
     let fileURL: URL
     let createdAt: Date
+}
+
+extension Float {
+    func truncate(places : Int)-> Float {
+        return Float(floor(pow(10.0, Float(places)) * self)/pow(10.0, Float(places)))
+    }
 }
