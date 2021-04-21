@@ -9,23 +9,27 @@ import Foundation
 import SwiftUI
 
 struct TabsView: View {
+    @State var tabSelection = 1
     var body: some View {
-        TabView {
+        TabView(selection: $tabSelection){
             
             SongSelectionView()
                 .tabItem {
-                    Label("Record", systemImage: "list.dash")
+                    Label("Record", systemImage: "mic")
                 }
+                .tag(1)
 
-            ChatView()
+            ChatView(tabNum: $tabSelection)
                 .tabItem {
-                    Label("Chat", systemImage: "square.and.pencil")
+                    Label("Chat", systemImage: "message")
                 }
+                .tag(2)
             
             TunerView()
                 .tabItem{
-                    Label("Tune", systemImage: "list.dash")
+                    Label("Tune", systemImage: "music.note")
                 }
+                .tag(3)
         }
             
     }

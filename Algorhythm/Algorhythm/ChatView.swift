@@ -11,11 +11,21 @@ import AssistantV1
 
 struct ChatView: View {
     @State var messages : [Message] = []
-    
+    @State var isShowingSheet = false
+    @State var isActive = false
     @State var text: String = ""
+    @Binding var tabNum : Int
     @State var response : String = ""{
         didSet{
-            messages.insert(Message(author: "Watson", contents: response), at: 0)
+            
+            if response == "!Tune!"{
+                isShowingSheet = true
+            }else if response == "!Record!"{
+                tabNum = 1
+            }else{
+                messages.insert(Message(author: "Watson", contents: response), at: 0)
+            }
+            
         }
     }
     @State var assistant : Assistant? = nil
@@ -103,6 +113,9 @@ struct ChatView: View {
                 }
             }.padding()
         }
+        .sheet(isPresented: $isShowingSheet) {
+                    TunerView()
+        }
         .navigationBarTitle("General")
         .onAppear(perform: {
             
@@ -137,6 +150,7 @@ struct ChatView: View {
                 
                 self.context = message.context
             }
+            //NavigationLink(destination: SongSelectionView(), isActive: $isActive) { }
         })
     }
     
@@ -144,6 +158,7 @@ struct ChatView: View {
         messages.insert(Message(author: "Me", contents: text), at: 0)
         var message = ["input": [ "text" : text]]
         askWatson(message: message)
+        
         
         //let input = MessageInput(text: text)
         //let input = MessageInput(messageType: "text", text: "Hello")
@@ -210,10 +225,6 @@ struct Message{
     var contents : String
 }
 
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatView()
-    }
-}
+
 
 
