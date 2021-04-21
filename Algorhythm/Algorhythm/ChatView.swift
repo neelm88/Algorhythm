@@ -12,8 +12,12 @@ import AssistantV1
 struct ChatView: View {
     @State var messages : [Message] = []
     
-    @State
-    var text: String = ""
+    @State var text: String = ""
+    @State var response : String = ""{
+        didSet{
+            messages.insert(Message(author: "Watson", contents: response), at: 0)
+        }
+    }
     @State var assistant : Assistant? = nil
     @State var sessionID : String = ""
 
@@ -23,7 +27,7 @@ struct ChatView: View {
     let watsonEnd = URL(string: "https://api.us-south.assistant.watson.cloud.ibm.com/instances/15388fdc-8436-4a4b-9963-a63f73d6c7f0/v2/assistants/fcc9506f-de72-4d1a-a610-8f71313de6da/message?version=2020-09-24")!
     
     
-    func askWatson(message:Dictionary<String, Dictionary<String, String>>) {
+    func askWatson(message:Dictionary<String, Dictionary<String, String>>){
         var request = URLRequest(url:watsonEnd)
         let b64login = String("apikey:AMDrjRAZOjSNg5qAuMYN5u-nebrkxubVvl9prClA649F")
         let b64data =  b64login.data(using: String.Encoding.utf8)
@@ -63,6 +67,8 @@ struct ChatView: View {
                                 }
                                 
                                 print(respText)
+                                self.response = respText
+                                
                             }
                         }
                     }
@@ -100,7 +106,7 @@ struct ChatView: View {
         .navigationBarTitle("General")
         .onAppear(perform: {
             var message = ["input": ["text": "help"]]
-            print(askWatson(message:message))
+            askWatson(message:message)
             
             let authenticator = WatsonIAMAuthenticator(apiKey: "AMDrjRAZOjSNg5qAuMYN5u-nebrkxubVvl9prClA649F")
            
@@ -138,6 +144,8 @@ struct ChatView: View {
     
     func send() {
         messages.insert(Message(author: "Me", contents: text), at: 0)
+        var message = ["input": [ "text" : text]]
+        askWatson(message: message)
         
         //let input = MessageInput(text: text)
         //let input = MessageInput(messageType: "text", text: "Hello")
