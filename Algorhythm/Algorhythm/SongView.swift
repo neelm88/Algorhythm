@@ -140,7 +140,7 @@ struct RecordingRow: View {
             if !sent{
                 Button("Send", action: sendMusic)
             }else{
-                Text("\(self.acc.truncate(places: 2))%")
+                Text(String(format: "%.2f", self.acc) + "%")
             }
             
             if audioPlayer.isPlaying == false {
