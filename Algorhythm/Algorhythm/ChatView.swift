@@ -105,8 +105,6 @@ struct ChatView: View {
         }
         .navigationBarTitle("General")
         .onAppear(perform: {
-            var message = ["input": ["text": "help"]]
-            askWatson(message:message)
             
             let authenticator = WatsonIAMAuthenticator(apiKey: "AMDrjRAZOjSNg5qAuMYN5u-nebrkxubVvl9prClA649F")
            
