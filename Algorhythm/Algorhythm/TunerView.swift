@@ -45,7 +45,7 @@ class Tuner: NSObject, ObservableObject{
 
         startRecording()
 
-        self.curNote = "InitLabel"
+        self.curNote = ""
     }
     
         
