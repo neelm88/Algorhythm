@@ -3,7 +3,7 @@ def parse_sheet_music(file,tempo):
 
     with open(file) as f:
         contents = f.read()
-        contents = contents.strip('[ ').strip(' ]').split(' ')
+        contents = contents.strip('[ ').strip(' ]').split(' ')[:-1]
         notes = np.empty(len(contents),dtype=np.str0)
         end_timestamp = np.zeros(len(contents))
         for i in range(len(contents)):
