@@ -162,6 +162,17 @@ struct RecordingRow: View {
         }catch{
             print("💩")
         }
+        
+        let dataRec = client.read(1024 * 4)
+        let float2 = dataRec!.withUnsafeBytes { $0.load(as: Float.self) }
+        print(float2) // 40.0
+        
+        
+        
+    }
+    
+    func floatValue(data: Data) -> Float {
+        return Float(bitPattern: UInt32(bigEndian: data.withUnsafeBytes { $0.load(as: UInt32.self) }))
     }
 }
 
