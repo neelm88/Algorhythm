@@ -5,32 +5,52 @@
 //  Created by CatalinA on 4/6/21.
 //
 
-import UIKit
+import SwiftUI
 import AVFoundation
-import aubio 
+import aubio
+import Combine
 
-class TunerView: UIViewController {
+struct TunerView: View {
+    
+
+    
+    @StateObject var curNote = Tuner()
+    
+    private var bufferSize = UInt32(2048);
+    
+    
+    var body : some View{
+        VStack{
+            Text(curNote.curNote)
+        }
+    }
+    
+    
+}
+
+class Tuner: NSObject, ObservableObject{
     
     private var audioEngine: AVAudioEngine!
     private var mic: AVAudioInputNode!
     
-    @IBOutlet var curNote: UILabel!
+    @Published var curNote: String = ""
     
     private var bufferSize = UInt32(2048);
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override init() {
+        super.init()
         configureAudioSession()
         audioEngine = AVAudioEngine()
         mic = audioEngine.inputNode
-        
+
         startRecording()
-        
-        self.curNote.text = "InitLabel"
+
+        self.curNote = "InitLabel"
     }
     
+        
     func setText(textVal:String) {
-        self.curNote.text = textVal
+        self.curNote = textVal
     }
 
     func startRecording() {

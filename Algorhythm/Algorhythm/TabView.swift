@@ -21,6 +21,11 @@ struct TabsView: View {
                 .tabItem {
                     Label("Chat", systemImage: "square.and.pencil")
                 }
+            
+            TunerView()
+                .tabItem{
+                    Label("Tune", systemImage: "list.dash")
+                }
         }
             
     }
