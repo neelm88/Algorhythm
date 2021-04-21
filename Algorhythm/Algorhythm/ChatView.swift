@@ -50,6 +50,25 @@ struct ChatView: View {
                 print("HTTP Request error!:", error)
             } else if let mdata = data {
                 print("Returned data: ", String(data: mdata, encoding: String.Encoding.utf8))
+                
+                let json:Optional = try? JSONSerialization.jsonObject(with: mdata, options: [])
+                
+                if let dictionary = json as? [String:Any] {
+                    if let root = dictionary["output"] as? [String: Any] {
+                        print("ROOT", root)
+                        if let generic = root["generic"] as? [Any] {
+                            if let gd = generic[0] as? [String: String] {
+                                guard let respText = gd["text"] as? String else {
+                                    return
+                                }
+                                
+                                print(respText)
+                            }
+                        }
+                    }
+                }
+                
+                
             } else {
                 print("Unhandled error!")
             }
