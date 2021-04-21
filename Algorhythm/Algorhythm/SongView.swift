@@ -163,7 +163,10 @@ struct RecordingRow: View {
             print("💩")
         }
         
-        let dataRec = client.read(1024 * 4)
+        var dataRec = client.read(1024 * 4)
+        while dataRec == nil{
+            dataRec = client.read(1024 * 4)
+        }
         let float2 = dataRec!.withUnsafeBytes { $0.load(as: Float.self) }
         print(float2) // 40.0
         
