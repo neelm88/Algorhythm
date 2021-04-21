@@ -130,12 +130,19 @@ struct RecordingRow: View {
     var audioURL: URL
     var client : TCPClient
     @ObservedObject var audioPlayer = AudioPlayer()
+    @State var sent = false
+    @State var acc : Float = 0.0
     
     var body: some View {
         HStack {
             Text("\(audioURL.lastPathComponent)")
             Spacer()
-            Button("Send", action: sendMusic)
+            if !sent{
+                Button("Send", action: sendMusic)
+            }else{
+                Text("\(self.acc)")
+            }
+            
             if audioPlayer.isPlaying == false {
                 Button(action: {
                     self.audioPlayer.startPlayback(audio: self.audioURL)
@@ -167,8 +174,8 @@ struct RecordingRow: View {
         while dataRec == nil{
             dataRec = client.read(1024 * 4)
         }
-        let float2 = dataRec!.withUnsafeBytes { $0.load(as: Float.self) }
-        print(float2) // 40.0
+        self.acc = dataRec!.withUnsafeBytes { $0.load(as: Float.self) }
+        
         
         
         
